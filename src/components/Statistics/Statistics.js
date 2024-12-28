@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Statistics.css"; 
 
 export const Statistics = ({ stats }) => {
   return (
     <section className="statistics">
+      <h2>Upload Stats</h2>
       <ul className="stat-list">
         {stats.map(({ id, label, percentage }) => (
           <li key={id} className="item">
